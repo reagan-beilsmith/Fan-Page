@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); /* Sour Gummy font for subpages*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); /*Lobster font for link-picture titles on mainpage*/
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lobster&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap'); /*Ephesis font for Chocolate! title on mainpage*/
+
+body { /*Default font of all text on website (unless overridden)*/
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  padding: 0;
+    overflow-x: hidden; /*removes hidden horizontal overflow*/
+}
+
+.container { /*website background*/
+  width: 100%;
+  margin: auto;
+  padding: 1em; /*extra padding*/
+  background: linear-gradient(to bottom right, #f3bc7e, #a77740, #684016, #49270c); /*website background color (gradient)*/
+  min-height: calc(100vh - 2em); /*removes extra padding to remove extra scroll space*/
+}
+
+.row { /*style of the row of food pictures on each page*/
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+.column { /*style of each invisible column on page*/
+  flex: 20%; /*each column takes up about 20% of the row*/
+
+  text-align: center;
+}
+
+.square-image { /* Style of boxes of link-pictures */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 10px solid rgb(41, 30, 20);
+}
+
+.big-col { /*Lists of bullet points ("Texture", "Flavor", etc.)*/
+  flex: 40%;
+  margin: 1%;
+  font-size: 25px;
+}
+
+li { /*spacing between list of bullet points*/
+    margin-bottom: 25px;
+    margin-right: 200px;
+}
+
+.webpage { /*color of each subpage*/
+  background-color: #b8a289;
+}
+
+.menu-title { /*Style of each title of link-picture*/
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+}
+
+.main-title { /* Style of main title/subcaption and its bordered box, center top of main page*/
+  background-color: rgb(167, 135, 105);
+  width: 52%;
+  margin: 0 auto 1em auto;
+  border: 15px solid rgb(65, 47, 31);
+  border-radius: 10px;
+  font-family: "Ephesis", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}
+
+h1 { /*Custom margin of "Chocolate!" main title (not the subcaption)*/
+  margin-top: 0.2em;  
+  margin-bottom: 0;
+}
+
+h3 a { /*Customizing "Back" button*/
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+
+  background-color: #f5e1c8;   /* box color */
+  color: #4b2e19; /*"Back" text color */
+  padding: 6px 12px; /*space inside box */
+  border-radius: 8px; /*rounds the box corners*/
+  text-shadow: none;
+  border-color: #4b2e19; /*color of box border*/
+  border-width: 3px;
+  border-style: solid;
+
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 58px;
+}
+
+.page-titles { /*On each subpage- "Why I like __" titles*/
+  font-size: 80px;
+  font-weight: 400;
+  width: 80%;
+}
+
+
+
+#hr-1 { /*On each subpage- Gray divider line separating ranking description and food images*/
+  width: 90%;
+  border: none;
+  height: 10px;
+}
+
+#chocbarpage { /*Chocolate Bar subpage- background custom*/
+  background-image: url("squares.jpg");
+  background-size: cover; /*image fills entire page*/
+  background-repeat:no-repeat; /*prevents tiling*/
+  background-position: center; /*centers image nicely*/
+  color: white;
+  text-shadow: 4px 4px 6px #000000;
+}
+
+#hotchocpage { /*Hot Chocolate subpage- background custom*/
+  background-image: url("marsh.jpg");
+  background-size: cover; /*image fills entire page*/
+  background-repeat: no-repeat; /*prevents tiling*/
+  background-position: center; /*centers image nicely*/
+}
+
+#chocicepage { /*Chocolate Ice Cream subpage- background custom*/
+  background-image: url("blueskysun.jpg");
+  background-size: cover; /*image fills entire page*/
+  background-repeat: no-repeat; /*prevents tiling*/
+  background-position: center; /*centers image nicely*/
+}
+
+#chocfoodspage { /*Chocolate-Covered Foods subpage- background custom*/
+  background-image: url("tablegraybg.png");
+  background-size: cover; /*image fills entire page*/
+  background-repeat: no-repeat; /*prevents tiling*/
+  background-position: center; /*centers image nicely*/
+}
+
+.bold-word { /*customizingt bold words in bullet points*/
+  font-weight: bold;
+}
